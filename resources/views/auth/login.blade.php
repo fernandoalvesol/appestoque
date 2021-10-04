@@ -5,13 +5,13 @@
     <div class="row justify-content-md-center mt-5">
         <div class="col-md-offset-2 col-md-8">
             <div class="card">
-                <div class="card-header">Login</div>
+                <div class="card-header title-login">FIBRANET - CONTROLE DE ESTOQUE</div>
                 <div class="card-body">
                     <form class="form-horizontal" method="POST" action="{{ route('entrar') }}">
                         {{ csrf_field() }}
 
                         <div class="form-group row">
-                            <label for="email" class="col-lg-4 col-form-label text-lg-right">E-Mail</label>
+                            <label for="email" class="col-lg-4 col-form-label text-lg-right">Digite Seu Email:</label>
 
                             <div class="col-lg-6">
                                 <input
@@ -33,7 +33,7 @@
                         </div>
 
                         <div class="form-group row">
-                            <label for="password" class="col-lg-4 col-form-label text-lg-right">Senha</label>
+                            <label for="password" class="col-lg-4 col-form-label text-lg-right">Digie sua Senha:</label>
 
                             <div class="col-lg-6">
                                 <input
