@@ -50,13 +50,13 @@ Route::group(['middleware' => 'auth'], function () {
 
 
 	//Categorias
-	Route::get('/ListarCategoria','CategoriaController@listar')->name('Listar Categorias');
-	Route::get('/ListarCategoria/remove/{id_categoria}','CategoriaController@remove');
-	Route::get('/ListarCategoria/mostrar/{id_categoria}','CategoriaController@mostra');
-
+        Route::get('/ListarCategoria','CategoriaController@listar')->name('Listar Categorias');
+        Route::resource('listar', 'CategoriaController');
+        Route::get('/RemoverCategoria/destroy/{id_categoria}','CategoriaController@destroy');
+        //Route::get('/ListarCategoria/mostrar/{id_categoria}','CategoriaController@mostra');
 	Route::get('/CadastrarCategoria','CategoriaController@novo')->name('Cadastrar Categoria');
 	Route::post('/CadastrarCategoria/adiciona','CategoriaController@adiciona');
-	Route::post('/CadastrarCategoria/edita/{id_categoria}','CategoriaController@edita');
+	Route::post('/CadastrarCategoria/edita/{id_categoria}','CategoriaController@update');
 
 	//Entrada
 	Route::get('/ListarEntrada','EntradaController@listarEntrada')->name('Listar Entradas');

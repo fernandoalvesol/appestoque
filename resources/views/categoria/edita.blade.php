@@ -1,7 +1,7 @@
 @extends('layout.principal')
 @section('conteudo')
 
-<form class="form-horizontal" method="post" action="/CadastrarCategoria/edita/{{ $c->id_categoria }}">
+<form class="form-horizontal" value="{{ csrf_token() }}" method="post" action="/CadastrarCategoria/edita/{{ $c->id_categoria }}">
       <fieldset>
 
       <!-- Form Name -->
@@ -21,7 +21,7 @@
         <div class="form-group">
             <label class="col-md-4 control-label" for="salvar"></label>
             <div class="col-md-4">
-              <button class="btn btn-success">SALVAR</button>
+              <button class="btn btn-success">EDITAR</button>
             </div>
         </div>    
 

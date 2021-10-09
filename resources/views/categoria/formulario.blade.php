@@ -1,7 +1,7 @@
 @extends('layout.principal')
 @section('conteudo')
 
-<form class="form-horizontal" method="post" action="/CadastrarCategoria/adiciona">
+<form class="form-horizontal" method="post" action="{{url('/CadastrarCategoria/adiciona')}}">
       <fieldset>
 
       <!-- Form Name -->
