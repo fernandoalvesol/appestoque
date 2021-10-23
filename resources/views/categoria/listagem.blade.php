@@ -33,7 +33,6 @@
                 <td>{{ $c->nome }}</td>
                 <td><a href="{{route('listar.edit', $c->id_categoria)}}"><span class="glyphicon glyphicon-pencil"></span></a>
                 <td><a href="{{route('listar.show', $c->id_categoria)}}"><span class="glyphicon glyphicon-eye-open"></span></a></td>    
-                <td><a href="/RemoverCategoria/destroy/{{ $c->id_categoria }}"><span class="glyphicon glyphicon-folder-close"></span></a></td>    
                 <!--<td><a href="/ListarCategoria/mostrar/{{ $c->id_categoria }}"><span class="glyphicon glyphicon-pencil"></span></a></td>
                 <td><a href="/ListarCategoria/remove/{{ $c->id_categoria }}"><span class="glyphicon glyphicon-trash"></span></a></td> -->
             </tr>     
